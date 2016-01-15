@@ -1,0 +1,35 @@
+/*Magic Square*/
+
+#include <stdio.h>
+
+
+int main (void) {
+
+    int one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve, thirteen, fourteen, fifteen,
+    sixteen, first_row, second_row, third_row, fourth_row, first_column, second_column, third_column, fourth_column,
+    first_diagonal, second_diagonal;
+
+
+    printf("Enter the numbers from 1 to 16 in any order:");
+    scanf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d", &one, &two, &three, &four, &five, &six, &seven, &eight,
+           &nine, &ten, &eleven, &twelve, &thirteen, &fourteen, &fifteen, &sixteen );
+
+    printf("%3d %d %d %d\n %d %d %d %d\n %d %d %d %d\n %d %d %d %d\n", one, two, three, four, five, six, seven, eight, nine    , ten, eleven, twelve, thirteen, fourteen, fifteen, sixteen);
+
+    first_row = one + two + three + four;
+    second_row = five + six + seven + eight;
+    third_row = nine + ten + eleven + twelve;
+    fourth_row = thirteen + fourteen + fifteen + sixteen;
+    first_column = one + five + nine + thirteen;
+    second_column = two + six + ten + fourteen;
+    third_column = three + seven + eleven + fifteen;
+    fourth_column = four + eight + twelve + sixteen;
+    first_diagonal = one + six + eleven + sixteen;
+    second_diagonal = four + seven + ten + thirteen;
+
+    printf("Row sums: %d %d% d% d\n", first_row, second_row, third_row, fourth_row);
+    printf("Column sums: %d %d% d% d\n",first_column, second_column, third_column, fourth_column);
+    printf("Diagonal sums: %d %d\n", first_diagonal, second_diagonal);
+
+    return 0;
+}
