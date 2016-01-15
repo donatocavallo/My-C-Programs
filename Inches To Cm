@@ -1,0 +1,21 @@
+/* Inches To Centimeters Converter Program */
+
+#include <stdio.h>
+
+#define CM_EQ 2.54f
+       
+
+int main (void) {
+
+    float centimeters, inches;
+
+
+    printf("Enter Inches:");
+    scanf("%f", &inches);
+
+    centimeters = inches * CM_EQ;
+
+    printf("Centimeter equivalent: %.2f\n", centimeters);
+
+    return 0;
+}
