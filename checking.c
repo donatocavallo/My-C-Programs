@@ -18,6 +18,7 @@ int main(void)
            case 1:
                printf("Enter amount of credit: ");
                scanf("%f", &credit);
+               balance += credit;
                break;
            case 2:
                printf("Enter amount of debit: ");
