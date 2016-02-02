@@ -2,8 +2,8 @@
 
 int main(void)
 {
-   int 1, n;
-      printf("This program prints a table of squares.|n");
+   int i, n;
+      printf("This program prints a table of squares.\n");
       printf("Enter number of entries in table: ");
       scanf("%d", &n);
 
